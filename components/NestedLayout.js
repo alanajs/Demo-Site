@@ -4,7 +4,7 @@ const Sidebar = () => {
     return (
         <div class="min-h-screen flex flex-col flex-auto flex-shrink-0 antialiased text-gray-800">
         <div class="fixed flex flex-col top-0 left-0 w-64 h-full border-r">
-        <div class="flex items-center justify-center h-14">
+        <div class="flex items-center justify-center h-22">
         </div>
         <div class="overflow-y-auto overflow-x-hidden flex-grow">
             <ul class="flex flex-col py-4 space-y-1">

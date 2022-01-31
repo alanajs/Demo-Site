@@ -6,8 +6,8 @@ const GithubIcon = () => {
         <Image
             src={Github}
             alt="Github Icon"
-            width={50}
-            height={50}
+            width={45}
+            height={45}
         />
     )
 }

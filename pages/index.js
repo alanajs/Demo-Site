@@ -23,7 +23,7 @@ const Home = () => {
                             <h1 class= "text-5xl font-semibold text-black lg:text-6xl">Alana.js</h1>
                             {/* <span> </span> */}
                             <h2 class = "text-2xl font-semibold text-gray-800 lg:text-1xl">AWS Lambda and API Gateway, simplified for JavaScript</h2>
-                            <button class="w-full px-4 py-2 mt-4 text-sm font-medium text-white uppercase transition-colors duration-200 transform bg-blue-600 rounded-md lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500">Get Started</button>
+                            <a href="/documentation"><button class="w-full px-4 py-2 mt-4 text-sm font-medium text-white uppercase transition-colors duration-200 transform bg-blue-600 rounded-md lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500" >Get Started</button></a>
                         </div>
                         </div>
                     </div>
@@ -45,9 +45,7 @@ const Home = () => {
                 
                 <div class="md:w-1/2">
                     <h3 class="text-3xl font-semibold text-gray-800">Alana.js is an all-in-one tool that simplifies AWS SDK from development to production</h3>
-                    <p class="max-w-md mt-4 text-gray-600">Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                        culpa qui officia deserunt mollit anim id est laborum.</p>
+                    {/* <p class="max-w-md mt-4 text-gray-600">Alana.js makes setting up Lambda microservices easier than ever. Designed specifically for the Node.js runtime environment, Alana.js consolidates functionality provided by AWS SAM and AWS CLI so that you can automate your deployment and configuration tasks and focus on writing code. Create Lambda functions with layers and dependencies, build on API Gateway, and invoke functions locally — all with one simple installation.</p> */}
                     <a href="#" class="block mt-8 text-indigo-700 underline">Experienced team</a>
                 </div>
 
@@ -86,7 +84,7 @@ const Home = () => {
                 </div>
             </div> */}
             <TeamCard img={AL} name="Amy Liang" github="https://github.com/amyliangny" linkedin="https://www.linkedin.com/in/amyliang18/" />
-            {/* <TeamCard img={AL} name="Tin Khin" github="https://github.com/Khin92" linkedin="https://www.linkedin.com/in/tin-khin-4a0428230/" /> */}
+            {/* <TeamCard img={AL} name="Tin Khin" github="https://github.com/Khin92" linkedin="https://www.linkedin.com/in/tin-khin/" /> */}
             {/* **Add Teammates here** */}
         </div>
 

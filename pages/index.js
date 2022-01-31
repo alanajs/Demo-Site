@@ -22,7 +22,7 @@ const Home = () => {
                         <div class="text-center">
                             <h1 class= "text-5xl font-semibold text-black lg:text-6xl">Alana.js</h1>
                             {/* <span> </span> */}
-                            <h2 class = "text-2xl font-semibold text-black lg:text-1xl">AWS Lambda and API Gateway, simplified for JavaScript</h2>
+                            <h2 class = "text-2xl font-semibold text-gray-800 lg:text-1xl">AWS Lambda and API Gateway, simplified for JavaScript</h2>
                             <button class="w-full px-4 py-2 mt-4 text-sm font-medium text-white uppercase transition-colors duration-200 transform bg-blue-600 rounded-md lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500">Get Started</button>
                         </div>
                         </div>

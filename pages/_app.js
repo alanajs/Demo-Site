@@ -10,12 +10,11 @@ function MyApp({ Component, pageProps }) {
       <Layout>
         <Component {...pageProps} />
       </Layout>
-
-    {/* const getLayout = Component.getLayout || ((page) => page)
-
-    return getLayout(<Component {...pageProps} />) */}
     </>
   );
+  // const getLayout = Component.getLayout || ((page) => page)
+
+  // return getLayout(<Component {...pageProps} />)
 }
 
 export default MyApp;

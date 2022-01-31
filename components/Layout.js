@@ -6,7 +6,7 @@ import Sidebar from './NestedLayout'
 export default function Layout({ children }) {
     return (
         <>
-        {/* <div> */}
+        {/* <div class='flex flex-column'> */}
             <Nav />
         {/* </div> */}
             <main>{children}</main>

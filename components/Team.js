@@ -11,7 +11,7 @@ const TeamCard = (props) => {
     return (
         <div>
 
-<div class="h-screen bg-gradient-to-br from-gray-500 to-gray-800">
+<div class="bg-gradient-to-br from-gray-500 to-gray-800">
         <div class="container flex justify-center mx-auto pt-16">
                         <div>
                             <h1 class="xl:text-4xl text-3xl text-center text-white font-bold mx-auto">Meet the Team</h1>

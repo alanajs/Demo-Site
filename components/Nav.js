@@ -33,7 +33,7 @@ const Nav = () => {
                 <div class="lg:flex lg:items-center lg:justify-between">
                     <div class="flex items-center justify-between">
                         <div class="text-xl font-semibold text-gray-700 flex flex-row items-center">
-                            <img class='object-scale-down' src='./alana.trans.png'/>
+                            <img class='w-14' src='./alana.trans.png'/>
                             <a class="text-2xl font-bold text-gray-800 dark:text-white lg:text-3xl hover:text-gray-700 dark:hover:text-gray-300" href="#">Alana.js</a>
                         </div>
                     

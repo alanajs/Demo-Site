@@ -11,8 +11,13 @@ const TeamCard = (props) => {
     return (
         <div>
 
-    
-<div class="flex items-center justify-center h-screen bg-gradient-to-br from-gray-500 to-gray-800">
+<div class="h-screen bg-gradient-to-br from-gray-500 to-gray-800">
+        <div class="container flex justify-center mx-auto pt-16">
+                        <div>
+                            <h1 class="xl:text-4xl text-3xl text-center text-white font-bold mx-auto">Meet the Team</h1>
+                        </div>
+        </div>
+  <div class = "flex items-center justify-center">
     <div class="bg-white font-semibold text-center rounded-3xl border shadow-lg p-10 max-w-xs m-8">
      <Image src={props.img} alt="Amy Liang" width="100" height="100" className="mb-3 w-32 h-32 rounded-full shadow-lg mx-auto"></Image>
      <h1 class="text-lg text-gray-700"> Amy Liang </h1>
@@ -59,7 +64,7 @@ const TeamCard = (props) => {
             <a class="px-8 tracking-wide"><GithubIcon /></a>
         </Link>
         
-        <Link href={props.linkedin}>
+        <Link href="https://www.linkedin.com/in/jae-hyun-ha/">
             <a class="px-8 tracking-wide"><LinkedinIcon /></a>
         </Link>
         </div>
@@ -80,6 +85,7 @@ const TeamCard = (props) => {
         <Link href={props.linkedin}>
             <a class="px-8 tracking-wide"><LinkedinIcon /></a>
         </Link>
+        </div>
         </div>
    </div>
  </div>

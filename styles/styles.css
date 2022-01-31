@@ -2,32 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-.nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    /* overflow: hidden; */
-    display: flex;
-    /* flex-direction: row; */
-    justify-content: space-between;
+nav {
+    position: sticky;
+    top: 0;
 }
 
-ul{
-    list-style-type: none;
+/* RED BORDER ON INVALID INPUT */
+.check input:invalid {
+    border-color: red;
 }
 
-li {
-    float: left;
-  }
-
-li a:hover {
-    background-color: #111;
+/* FLOATING LABEL */
+.label-floating input:not(:placeholder-shown),
+.label-floating textarea:not(:placeholder-shown) {
+    padding-top: 1.4rem;
+}
+.label-floating input:not(:placeholder-shown) ~ label,
+.label-floating textarea:not(:placeholder-shown) ~ label {
+    font-size: 0.8rem;
+    transition: all 0.2s ease-in-out;
+    color: #1f9d55;
+    opacity: 1;
 }
 
-a{
-    text-decoration: none;
-}
 
-/* .rounded{
-    height:
-} */
+code {
+    background-color: rgb(226 232 240);
+}

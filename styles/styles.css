@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 nav {
     position: sticky;
     top: 0;
@@ -10,6 +11,8 @@ nav {
 code {
     background-color: rgb(226 232 240);
 }
+
+
 
 /* li span {
     background-color: rgb(19, 224, 112);

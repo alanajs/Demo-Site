@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Sidebar from '../components/NestedLayout.js';
+import Sidebar from '../components/Sidebar.js';
 import Layout from '../components/Layout.js';
 // import styles from '../styles/Documentation.module.css';
 import Guide from '../components/Guide.js';
@@ -12,10 +12,10 @@ function Documentation({children}) {
     <Head>
         <title>Alana.JS/Documentation</title>
         <meta name="description" content="Alana.JS" />
-        <link rel="icon" href="./Alana2.png" />
+        <link rel="icon" href="./alana.trans.png" />
     </Head>
 
-        <Sidebar class='float-left'/>
+        <Sidebar class='bg-gray'/>
   
         <Guide />
     </div>

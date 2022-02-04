@@ -5,8 +5,8 @@ function Contact() {
     <div>
        <Head>
             <title>Alana.JS/Contact</title>
-            <meta name="description" content="Alana.JS" />
-            <link rel="icon" href="./Alana2.png" />
+            <meta name="contact" content="Alana.js" />
+            <link rel="icon" href="./alana.trans.png" />
         </Head>
         <main>
           <form id="contact-me" class="w-full mx-auto max-w-2xl bg-white shadow-inner p-8 py-20 justify-center">     

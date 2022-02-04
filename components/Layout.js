@@ -1,16 +1,14 @@
 import Nav from './Nav';
-import Sidebar from './NestedLayout'
-// import Footer from './footer'
+import Sidebar from './Sidebar'
+import Footer from './Footer'
 // import NestedLayout from '../components/NestedLayout'
 
 export default function Layout({ children }) {
     return (
         <>
-        {/* <div class='flex flex-column'> */}
             <Nav />
-        {/* </div> */}
             <main>{children}</main>
-            {/* <Footer /> */}
+            <Footer />
         
         </>
     )

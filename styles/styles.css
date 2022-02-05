@@ -2,30 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+
 nav {
     position: sticky;
     top: 0;
 }
 
-/* RED BORDER ON INVALID INPUT */
-.check input:invalid {
-    border-color: red;
-}
-
-/* FLOATING LABEL */
-.label-floating input:not(:placeholder-shown),
-.label-floating textarea:not(:placeholder-shown) {
-    padding-top: 1.4rem;
-}
-.label-floating input:not(:placeholder-shown) ~ label,
-.label-floating textarea:not(:placeholder-shown) ~ label {
-    font-size: 0.8rem;
-    transition: all 0.2s ease-in-out;
-    color: #1f9d55;
-    opacity: 1;
-}
-
-
 code {
     background-color: rgb(226 232 240);
 }
+
+* {
+    font-family: system-ui;
+  }
+/* 
+#logo {
+    background-color: transparent;
+  }
+
+#title{
+    background-color:transparent;
+} */
+/* li span {
+    background-color: rgb(19, 224, 112);
+    }   */

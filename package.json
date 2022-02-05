@@ -17,6 +17,7 @@
   "keywords": [],
   "description": "",
   "dependencies": {
+    "gsap": "^3.9.1",
     "html-webpack-plugin": "^5.5.0",
     "next": "^12.0.8",
     "react": "^17.0.2",

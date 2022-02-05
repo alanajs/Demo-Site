@@ -12,8 +12,13 @@ code {
     background-color: rgb(226 232 240);
 }
 
+#logo {
+    background-color: transparent;
+  }
 
-
+#title{
+    background-color:transparent;
+}
 /* li span {
     background-color: rgb(19, 224, 112);
     }   */

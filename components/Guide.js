@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import npm_demo from '../public/Npm_demo.png';
+// import Image from 'next/image';
+// import npm_demo from '../public/Npm_demo.png';
 
 function Guide() {
     
@@ -30,7 +30,6 @@ function Guide() {
                             <li>Flag: <span class="bg-slate-100">-r, --role &lt;roleName&gt;</span>: the AWS Role to be used</li>
                             <li>Flag: <span class="bg-slate-100">-b, --bucket &lt;funcName&gt;</span>: S3 bucket to be used</li>
                             <li>Flag: <span class="bg-slate-100">-u, --update</span>: set this flag to override and update AWS credentials</li>
-                            {/* <li>Example: <code>alana list -F</code> </li> */}
                         </ul>
 
 
@@ -39,7 +38,6 @@ function Guide() {
                         <ul class="list-disc pl-5">
                             <li>Flag: <span class="bg-slate-100">-F, --functions</span>: list all the Lambda functions</li>
                             <li>Flag: <span class="bg-slate-100">-f, --function &lt;funcName&gt;</span>: list a specific function versions</li>
-                            {/* <li>Example: <code>alana list -F</code> </li> */}
                         </ul>
  
                     <h2 class="font-bold text-xl pt-5 py-1">create</h2>

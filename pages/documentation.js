@@ -1,7 +1,5 @@
 import Head from 'next/head'
 import Sidebar from '../components/Sidebar.js';
-import Layout from '../components/Layout.js';
-// import styles from '../styles/Documentation.module.css';
 import Guide from '../components/Guide.js';
 
 function Documentation({children}) {

@@ -8,6 +8,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 // const __dirname = path.resolve();
 
 const config = {
+  type: "module",
   entry: ['./client/index.js'],
   output: {
     path: path.resolve(__dirname, 'client/build'),

@@ -11,8 +11,7 @@ const Footer = () => {
                         <li class="mt-6"><a class="rounded outline-hidden outline-offset-4 hover:outline-double" href="/contact">Contact</a></li>
                         <li class="mt-6"><a class="rounded outline-hidden outline-offset-4 hover:outline-double" href="mailto:tinhtarkhin@gmail.com">Email</a></li>
                         <li class="mt-6 flex flex-row rounded outline-hidden outline-offset-4 hover:outline-double">
-                            <a href="https://github.com/oslabs-beta/Alana.js"><GithubIcon dark={true}/></a>
-                            
+                            <a href="https://github.com/oslabs-beta/Alana.js"><GithubIcon dark={true}/></a>                            
                         </li>
                     </ul>
                     <br/>

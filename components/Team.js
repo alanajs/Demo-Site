@@ -32,7 +32,6 @@ const Team = (props) => {
                             </Link>
                         </div>
                     </div>
-
                     <div class="bg-white font-semibold text-center rounded-3xl border shadow-lg p-10 max-w-xs m-8 bg-gray-200">
                         <img src="./Tin.jpeg" alt="Tin" width="100" height="100" className="mb-3 w-32 h-32 rounded-full mx-auto"></img>
                         <h1 class="text-lg text-gray-700"> Tin Khin </h1>
@@ -40,14 +39,12 @@ const Team = (props) => {
                         <div class="w-full flex justify-center pt-5 pb-5">
                             <Link href='https://github.com/Khin92'>
                                 <a class="px-8 tracking-wide"><GithubIcon dark={true}/></a>
-                            </Link>
-                            
+                            </Link>                            
                             <Link href='https://www.linkedin.com/in/tin-khin/'>
                                 <a class="px-8 tracking-wide"><LinkedinIcon /></a>
                             </Link>
                         </div>
                     </div>
-
                     <div class="bg-white font-semibold text-center rounded-3xl border shadow-lg p-10 max-w-xs m-8 bg-gray-200">
                         <img src="./JaeHyun.png" alt="JaeHyun" width="100" height="100" className="mb-3 w-32 h-32 rounded-full mx-auto"></img>
                         <h1 class="text-lg text-gray-700"> Jae Hyun Ha </h1>
@@ -61,7 +58,6 @@ const Team = (props) => {
                             </Link>
                         </div>
                     </div>
-
                     <div class="bg-white font-semibold text-center rounded-3xl border shadow-lg p-10 max-w-xs m-8 bg-gray-200">
                         <img src="./eugene.png" alt="Eugene" width="100" height="100" className="mb-3 w-32 h-32 rounded-full mx-auto"></img>
                         <h1 class="text-lg text-gray-700"> Eugene Lee</h1>
@@ -77,7 +73,7 @@ const Team = (props) => {
                     </div>
                 </div>
             </div>
-    </div>
+        </div>
     );
 }
 

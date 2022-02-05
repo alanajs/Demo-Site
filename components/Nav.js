@@ -36,7 +36,7 @@ const Nav = () => {
                     <div class="hidden -mx-4 lg:inline-flex lg:items-center">
                         <Link href="/documentation"><a class="block mx-4 mt-2 text-med text-gray-200 capitalize lg:mt-0 dark:text-gray-200 hover:text-gray-400 font-semibold">Documentation</a></Link>
                         <Link href="/tutorial"><a class="block mx-4 mt-2 text-med text-gray-200 capitalize lg:mt-0 dark:text-gray-200 hover:text-gray-400 font-semibold">Tutorial</a></Link>
-                        <Link href="/contact"><a class="block mx-4 mt-2 text-med text-gray-200 lg:mt-0 dark:text-gray-200 hover:text-gray-400 font-semibold">Contact</a></Link>
+                        <Link href="/contactpage"><a class="block mx-4 mt-2 text-med text-gray-200 lg:mt-0 dark:text-gray-200 hover:text-gray-400 font-semibold">Contact</a></Link>
                         <Link href="https://github.com/oslabs-beta/Alana.js"><a class="block mx-4 mt-2"><GithubIcon dark={false}/></a></Link>
                     </div>
                 </div>

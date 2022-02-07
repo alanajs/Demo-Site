@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Linkedin from '../public/LI-In-Bug.png';
 
 const LinkedinIcon = () => {

@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 
 nav {
     position: sticky;
@@ -12,18 +13,6 @@ code {
     background-color: rgb(226 232 240);
 }
 
-* {
-    font-family: system-ui;
-  }
-
-/* 
-#logo {
-    background-color: transparent;
-  }
-
-#title{
-    background-color:transparent;
-} */
-/* li span {
-    background-color: rgb(19, 224, 112);
-    }   */
+.font-secular{
+    font-family:'Secular One',sans-serif !important;
+}

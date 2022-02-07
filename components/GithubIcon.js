@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Github from '../public/GitHub-Mark-64px.png';
 
 const GithubIcon = (props) => {

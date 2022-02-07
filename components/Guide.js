@@ -130,7 +130,6 @@ function Guide() {
                             <li><span class="bg-slate-100">description: </span> optional string for description </li>
                             <li><span class="bg-slate-100">layerArr: </span> optional array of objects with layerName and layerVersion properties for adding layers </li>
                             <li><span class="bg-slate-100">publish: </span> optional boolean set to false on default; set to true to publish the first version of the function during creation </li>
-                            <li>Output: </li>
                         </ul>
                     </ul>      
                     <h2 class="font-bold text-xl pt-5 py-1">updateFunction(params)</h2>
@@ -180,7 +179,6 @@ function Guide() {
                             <li><span class="bg-slate-100">funcName: </span>required string function name </li>
                             <li><span class="bg-slate-100">version: </span> required string which represents function version number to attach alias to</li>
                             <li><span class="bg-slate-100">aliasName: </span> optional string which represents name of alias; defaults to 'aliasName'</li>
-                            <li>Output: </li>
                         </ul>
                     </ul>
                     <h2 class="font-bold text-xl pt-5 py-1">updateAlias(params)</h2>
@@ -189,7 +187,6 @@ function Guide() {
                         <li><span class="bg-slate-100">params: </span> required object which includes the following: </li>
                         <ul class="list-disc pl-7"> 
                             <li><span class="bg-slate-100">funcName: </span>required string function name </li>
-                            <li>Output:  </li>
                         </ul>
                     </ul>
                     <h2 class="font-bold text-xl pt-5 py-1">deleteAlias(params, aliasName)</h2>

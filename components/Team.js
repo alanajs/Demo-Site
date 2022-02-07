@@ -1,10 +1,6 @@
 import React from 'react';
 import Link from 'next/link'
 import Image from 'next/image'
-// import AL from '../public/Amy.jpg';
-// import TK from '../public/Tin.jpeg';
-// import JH from './JaeHyun.png';
-// import EL from '../public/eugene.png';
 import GithubIcon from './GithubIcon.js';
 import LinkedinIcon from './LinkedinIcon.js';
 

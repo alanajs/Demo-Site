@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import React from 'react';
 import Link from 'next/link'
+import GithubIcon from '../components/GithubIcon';
+import Linkedin from '../public/LI-In-Bug.png';
 
 function ContactPage() {
     return (
@@ -19,22 +21,22 @@ function ContactPage() {
                 <p>If you have any problems or concerns, please reach us by the following instruction</p>
                 <div class='flex flex-row justify-evenly py-5'>
                     <div class='flex flex-col justify-center items-center'>
-                        <img class='w-20 h-20' src='./email.png'/>
+                        <img class='w-14 h-14' src='./email.png'/>
                         <p>Email</p>
                         <a href='mailto:alana.javascript@gmail.com'>alana.javascript@gmail.com</a>
                     </div>
                     <div class='flex flex-col justify-center items-center'>
-                        <img class='w-20 h-20' src='./reddit.png'/>
+                        <img class='w-14 h-14' src='./reddit.png'/>
                         <p>Reddit</p>
                         <a href='https://www.reddit.com/user/alana_js'>Follow Us</a>
                     </div>
                     <div class='flex flex-col justify-center items-center'>
-                        <img class='w-20 h-20' src='./linkIn.png'/>
+                        <img class='w-14 h-14' src='./linkIn.png'/>
                         <p>LinkIn</p>
                         <a href='https://www.linkedin.com/in/tin-khin/'>Follow Us</a>
                     </div>
                     <div class='flex flex-col justify-center items-center'>
-                        <img class='w-20 h-20' src='./github.png'/>
+                        <GithubIcon dark={true}/>
                         <p>GitHub</p>
                         <a href='https://github.com/oslabs-beta/Alana.js'>Follow Us</a>
                     </div>

@@ -1,6 +1,3 @@
-// import Image from 'next/image';
-// import npm_demo from '../public/Npm_demo.png';
-
 function Guide() {    
     return (
     <div>  
@@ -81,12 +78,12 @@ function Guide() {
                     <h2 class="font-bold text-xl pt-5 py-1">createLayer</h2>
                     <p>Creates an AWS Lambda layer </p>
                     <ul class="list-disc pl-5">
-                        <li>Input: &lt;layerName&gt; required &lt;fileArr...&gt; required files to be converted into a Lambda layer separated by a space</li>
+                        <li>Input: <span class="bg-slate-100">&lt;layerName&gt;</span> required <span class="bg-slate-100">&lt;fileArr...&gt;</span> required files to be converted into a Lambda layer separated by a space</li>
                     </ul>
                     <h2 class="font-bold text-xl pt-5 py-1">addLayerToFunc</h2>
                     <p>Adds an AWS Lambda Layer to existing function </p>
                     <ul class="list-disc pl-5">
-                        <li>Input: &lt;funcName&gt; required </li>
+                        <li>Input: <span class="bg-slate-100">&lt;funcName&gt;</span> required </li>
                         <li><span class="bg-slate-100">-l, --layerName &lt;layerName&gt;</span> Lambda layer name</li>
                         <li><span class="bg-slate-100">-v, --layerVersion &lt;layerVersion&gt;</span> Lambda layer version number</li>
                     </ul>
@@ -97,7 +94,36 @@ function Guide() {
                         <li><span class="bg-slate-100">-c, --create &lt;aliasName&gt;</span> create alias name if it does not exist</li>
                         <li><span class="bg-slate-100">-u, --update &lt;aliasName&gt;</span> update alias name </li>
                         <li><span class="bg-slate-100">--delete</span> delete the specified alias name</li>
-                    </ul>                        
+                    </ul>   
+                    <h2 class="font-bold text-xl pt-5 py-1">api</h2>
+                    <p>Interacts with the APIs </p>
+                    <ul class="list-disc pl-5">
+                        <li>Input: <span class="bg-slate-100">&lt;apiName&gt;</span> optional name of the api to get information on. Leave blank for all apis</li>
+                        <li><span class="bg-slate-100">-c, --create</span> create api if it does not exist</li>
+                        <li><span class="bg-slate-100">-u, --update</span> update the api </li>
+                        <li><span class="bg-slate-100">-v, --version &lt;version&gt;</span> version of the api </li>
+                        <li><span class="bg-slate-100">-d, --description &lt;description&gt;</span> api description</li>
+                        <li><span class="bg-slate-100">--delete</span> delete the specified api</li>
+                    </ul>
+                    <h2 class="font-bold text-xl pt-5 py-1">routes</h2>
+                    <p>Interacts with a route on the api of choice </p>
+                    <ul class="list-disc pl-5">
+                        <li>Input: 
+                            <span class="bg-slate-100">&lt;apiName&gt;</span> required name of the api 
+                            <span class="bg-slate-100">&lt;method&gt;</span> optional type of HTTP request 
+                            <span class="bg-slate-100">&lt;route&gt;</span> optional route to establish (use "." for root) 
+                            <span class="bg-slate-100">&lt;funcName&gt;</span> optional the Lambda function that is invoked on the route </li>
+                        <li><span class="bg-slate-100">-c, --create</span> create specified route</li>
+                        <li><span class="bg-slate-100">-u, --update</span> update the route </li>
+                        <li><span class="bg-slate-100">-d, --description &lt;description&gt;</span> route description</li>
+                        <li><span class="bg-slate-100">--delete</span> delete the specified route</li>
+                    </ul>
+                    <h2 class="font-bold text-xl pt-5 py-1">deploy</h2>
+                    <p>Deploys the api to a staged name </p>
+                    <ul class="list-disc pl-5">
+                        <li>Input: <span class="bg-slate-100">&lt;apiName&gt;</span> required name of the api to get information on. Leave blank for all apis <span class="bg-slate-100">&lt;stageName&gt;</span> name of the stage being deployed </li>
+                        <li><span class="bg-slate-100">-d, --description &lt;description&gt;</span> stage description</li>
+                    </ul>                  
                 </div>
                 <div id="npm">
                     <h1 class="font-extrabold text-3xl py-2 pt-10">npm</h1>

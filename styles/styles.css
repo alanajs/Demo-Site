@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
 
 nav {
     position: sticky;
@@ -13,6 +15,6 @@ code {
     background-color: rgb(226 232 240);
 }
 
-.font-secular{
-    font-family:'Secular One',sans-serif !important;
+*{    
+    font-family: 'Questrial', sans-serif;
 }

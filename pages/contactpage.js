@@ -7,9 +7,9 @@ function ContactPage() {
     return (
     <div>
        <Head>
-            <title>Alana.JS/Contact</title>
-            <meta name="contact" content="Alana.js" />
-            <link rel="icon" href="./alana.trans.png" />
+            <title>alanajs Contact</title>
+            <meta name="alanajs Contact" content="alanajs" />
+            <link rel="icon" href="./alana-Logo.png" />
         </Head>
         <main>
             <div class="flex flex-col justify-center text-center">

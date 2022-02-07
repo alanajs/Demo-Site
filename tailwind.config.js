@@ -3,11 +3,8 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
-  theme: {
-    fontFamily: {
-      'secular': ['Secular One', 'sans-serif']
-    },
+  theme: {    
     extend: {},
-  },
-  plugins: [],
+    plugins: [],
+  }
 }

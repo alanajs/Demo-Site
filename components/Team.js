@@ -20,10 +20,10 @@ const Team = (props) => {
                         <h3 class="text-sm text-gray-600 "> Software Engineer </h3>
                         <div class="w-full flex justify-center pt-5 pb-5">
                             <Link href='https://github.com/amyliangny'>
-                                <a class="px-8 tracking-wide"><GithubIcon dark={true}/></a>
+                                <a target="_blank" class="px-8 tracking-wide"><GithubIcon dark={true}/></a>
                             </Link>
                             <Link href='https://www.linkedin.com/in/amyliang18/'>
-                                <a class="px-8 tracking-wide"><LinkedinIcon /></a>
+                                <a target="_blank" class="px-8 tracking-wide"><LinkedinIcon /></a>
                             </Link>
                         </div>
                     </div>
@@ -33,10 +33,10 @@ const Team = (props) => {
                         <h3 class="text-sm text-gray-600 "> Software Engineer </h3>
                         <div class="w-full flex justify-center pt-5 pb-5">
                             <Link href='https://github.com/Khin92'>
-                                <a class="px-8 tracking-wide"><GithubIcon dark={true}/></a>
+                                <a target="_blank" class="px-8 tracking-wide"><GithubIcon dark={true}/></a>
                             </Link>                            
                             <Link href='https://www.linkedin.com/in/tin-khin/'>
-                                <a class="px-8 tracking-wide"><LinkedinIcon /></a>
+                                <a target="_blank" class="px-8 tracking-wide"><LinkedinIcon /></a>
                             </Link>
                         </div>
                     </div>
@@ -46,10 +46,10 @@ const Team = (props) => {
                         <h3 class="text-sm text-gray-600 ">Fullstack Software Engineer </h3>
                         <div class="w-full flex justify-center pt-5 pb-5">
                             <Link href='https://github.com/msmintyfresh'>
-                                <a class="px-8 tracking-wide"><GithubIcon dark={true}/></a>
+                                <a target="_blank" class="px-8 tracking-wide"><GithubIcon dark={true}/></a>
                             </Link>                        
                             <Link href='https://www.linkedin.com/in/jae-hyun-ha/'>
-                                <a class="px-8 tracking-wide"><LinkedinIcon /></a>
+                                <a target="_blank" class="px-8 tracking-wide"><LinkedinIcon /></a>
                             </Link>
                         </div>
                     </div>
@@ -59,10 +59,10 @@ const Team = (props) => {
                         <h3 class="text-sm text-gray-600 "> Software Engineer </h3>
                         <div class="w-full flex justify-center pt-5 pb-5">
                             <Link href='https://github.com/scc135'>
-                                <a class="px-8 tracking-wide"><GithubIcon dark={true}/></a>
+                                <a target="_blank" class="px-8 tracking-wide"><GithubIcon dark={true}/></a>
                             </Link>                        
                             <Link href='https://www.linkedin.com/in/eugleenyc/'>
-                                <a class="px-8 tracking-wide"><LinkedinIcon /></a>
+                                <a target="_blank" class="px-8 tracking-wide"><LinkedinIcon /></a>
                             </Link>
                         </div>
                     </div>

@@ -21,23 +21,23 @@ function ContactPage() {
                 <div class='flex flex-row justify-evenly py-5'>
                     <div class='flex flex-col justify-center items-center'>
                      <a href='mailto:alana.javascript@gmail.com'><img class='w-14 h-14' src='./email.png'/></a>
-                        <p>Email</p>
-                        <a href='mailto:alana.javascript@gmail.com'>alana.javascript@gmail.com</a>
+                        {/* <p>Email</p> */}
+                        <a href='mailto:alana.javascript@gmail.com' target="_blank">alana.javascript@gmail.com</a>
                     </div>
                     <div class='flex flex-col justify-center items-center'>
-                    <a href='https://www.reddit.com/user/alana_js'><img class='w-14 h-14' src='./reddit-logo.png'/></a>
-                        <p>Reddit</p>
-                        <a href='https://www.reddit.com/user/alana_js'>Follow Us</a>
+                    <a href='https://www.reddit.com/user/alana_js' target="_blank"><img class='w-14 h-14' src='./reddit-logo.png'/></a>
+                        {/* <p>Reddit</p> */}
+                        {/* <a href='https://www.reddit.com/user/alana_js'>Follow Us</a> */}
                     </div>
                     <div class='flex flex-col justify-center items-center'>
-                        <a href='https://www.linkedin.com/in/tin-khin/'> <LinkedinIcon /> </a>
-                        <p>LinkedIn</p>
-                        <a href='https://www.linkedin.com/in/tin-khin/'>Follow Us</a>
+                        <a href='https://www.linkedin.com/company/alanajs/' target="_blank"> <LinkedinIcon /> </a>
+                        {/* <p>LinkedIn</p> */}
+                        {/* <a href='https://www.linkedin.com/company/alanajs/'>Follow Us</a> */}
                     </div>
                     <div class='flex flex-col justify-center items-center'>
-                        <a href='https://github.com/oslabs-beta/Alana.js'><GithubIcon dark={true}/></a>
-                        <p>GitHub</p>
-                        <a href='https://github.com/oslabs-beta/Alana.js'>Follow Us</a>
+                        <a href='https://github.com/oslabs-beta/Alana.js' target="_blank"><GithubIcon dark={true}/></a>
+                        {/* <p>GitHub</p> */}
+                        {/* <a href='https://github.com/oslabs-beta/Alana.js'>Follow Us</a> */}
                     </div>
                 </div>
                 </div>

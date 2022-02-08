@@ -6,8 +6,11 @@ const Footer = () => {
         <div>
             <footer class="bg-gray-200 text-center lg:text-left">
                 <div class="text-gray-700 text-center p-4 w-full text-sm font-bold leading-normal text-center">
-                    © 2022 Copyright: Follow
-                    <a class="github-button text-orange-700" href="https://github.com/oslabs-beta/Alana.js" aria-label="Follow @alana on GitHub"> @Alana.js</a>
+                    © 2022 Copyright: alanajs
+                    <div>
+                        Follow and star our Github page 
+                        <a class="github-button text-orange-500" href="https://github.com/oslabs-beta/Alana.js" aria-label="Follow @alana on GitHub"> here</a>
+                    </div>
                 </div>
             </footer>
         </div>

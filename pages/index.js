@@ -62,7 +62,7 @@ const Home = () => {
                         </div>                        
                         <div class="md:w-1/2"> 
                             <h3 class="text-3xl font-semibold leading-10 lg:leading-10 text-gray-700">alanajs simplifies AWS SDK from development to production</h3>
-                            <p class="text-xl leading-10 tracking-normal lg:leading-9 mt-4 text-gray-600">Make setting up Lambda microservices easier than ever. Designed specifically for the Node.js runtime environment, alanajs consolidates functionality provided by AWS SDK and IDE tookits, automating your deployment and configuration tasks so that you could focus on writing code. </p>
+                            <p class="text-xl leading-10 tracking-normal lg:leading-9 mt-4 text-gray-600">alanajs is a free, open source npm package that makes it easy to create and deploy Lambda functions, incorporate microservices in your application, and add integrations with AWS API gateway. Designed specifically for the Node.js runtime environment, alanajs consolidates functionality provided by AWS SDK and IDE tookits, automating your deployment and configuration tasks so that you can focus on writing code. </p>
                         </div>                        
                     </div>
                 </div>

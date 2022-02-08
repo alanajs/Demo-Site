@@ -6,7 +6,7 @@ function Guide() {
                 <div id="quickstart">
                     <h1 class="font-extrabold text-3xl py-2">Quick Start</h1>
                     <h2 class="font-bold text-xl py-1">Installation</h2>
-                    <p>Alanajs is availabile on <a href='https://www.npmjs.com/' class='text-sky-500 font-bold'>npm</a>.</p>
+                    <p>alanajs is availabile on <a href='https://www.npmjs.com/' class='text-sky-500 font-bold'>npm</a>.</p>
                     <code>npm install alanajs</code>                   
                 </div>
                 <div id="cli">
@@ -17,10 +17,11 @@ function Guide() {
                     <h2 class="font-bold text-xl pt-5 py-1">init</h2>
                     <p>Configures access to AWS </p>
                     <ul class="list-disc pl-5">
-                        <li>Input: <span class="bg-slate-100">AWS_ACCESS_KEY_ID</span> required, <span class="bg-slate-100">AWS_SECRET_ACCESS_KEY</span> required, <span class="bg-slate-100">region</span> optional,</li>
+                        <li>Input: <span class="bg-slate-100">AWS_ACCESS_KEY_ID</span> required, <span class="bg-slate-100">AWS_SECRET_ACCESS_KEY</span> required, <span class="bg-slate-100">AWS_ACCOUNT</span> optional account number, <span class="bg-slate-100">region</span> optional</li>
                         <li><span class="bg-slate-100">-r, --role &lt;roleName&gt;</span>: the AWS Role to be used</li>
                         <li><span class="bg-slate-100">-b, --bucket &lt;funcName&gt;</span>: S3 bucket to be used</li>
                         <li><span class="bg-slate-100">-u, --update</span>: set this flag to override and update AWS credentials</li>
+                        <li><span class="bg-slate-100">-d, --directory</span>: the directory that files to upload are located in. defaults to root directory</li>
                     </ul>
                     <h2 class="font-bold text-xl pt-5 py-1">list</h2>
                     <p>Displays table of lambda functions </p>
@@ -31,7 +32,7 @@ function Guide() {
                     <h2 class="font-bold text-xl pt-5 py-1">create</h2>
                     <p> Creates Lambda functions. Verifies that the requirements exist before attempting to create a function, creating them if verification fails </p>
                     <ul class="list-disc pl-5">
-                        <li>Input: <span class="bg-slate-100">funcName</span> optional, <span class="bg-slate-100">fileArr...</span> optional, <span class="bg-slate-100">region</span> optional </li>
+                        <li>Input: <span class="bg-slate-100">&lt;funcName&gt;</span> optional, <span class="bg-slate-100">fileArr...&gt;</span> optional, <span class="bg-slate-100">region</span> optional </li>
                         <li><span class="bg-slate-100">-r, --role &lt;roleName&gt;</span>: the AWS Role to be used</li>
                         <li><span class="bg-slate-100">-b, --bucket &lt;funcName&gt;</span>: S3 bucket to be used</li>
                         <li><span class="bg-slate-100">-d, --description &lt;description text&gt;</span>: Lambda function description</li>
@@ -41,7 +42,7 @@ function Guide() {
                     <h2 class="font-bold text-xl pt-5 py-1">update</h2>
                     <p>Updates AWS Lambda function</p>
                     <ul class="list-disc pl-5">
-                        <li>Input: &lt;funcName&gt; and &lt;fileArr&gt; </li>
+                        <li>Input: <span class="bg-slate-100">&lt;funcName&gt;</span> and <span class="bg-slate-100">&lt;fileArr&gt;</span> </li>
                         <li><span class="bg-slate-100">-d, --description &lt;description text&gt;</span> Lambda function description</li>
                         <li><span class="bg-slate-100">-p, --publish </span> publish a new version of the Lambda function</li>
                     </ul>
@@ -129,7 +130,7 @@ function Guide() {
                     <h1 class="font-extrabold text-3xl py-2 pt-10">npm</h1>
                     <p>Create a .env file in the top level of your application with the following keys and values: <code>AWS_ACCESS_KEY_ID</code>,  
                         <code>AWS_SECRET_ACCESS_KEY</code>, <code>AWS_REGION</code><code>S3BUCKETNAME</code>, and <code>ROLENAME</code></p>
-                    <img class="object-cover object-center pt-5 h-1/2 w-1/2 rounded-md shadow" src="./Npm_demo.png"/>
+                    <img class="object-cover object-center pt-5 h-1/2 w-1/2 rounded-md" src="./npmdemo2.png"/>
                     <h2 class="font-bold text-xl pt-5 py-1">getFuncList()</h2>
                     <ul>
                         <li>Displays table of lambda functions </li>

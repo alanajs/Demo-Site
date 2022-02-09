@@ -23,7 +23,7 @@ function Tutorial() {
                     <img class="object-cover object-center rounded-md shadow w-1/2 h-auto"
                         src= './cli_demo4.gif' ></img>
                     <h1 class='w-full text-xl font-bold leading-normal text-center  pb-10'>Figure 4: Create, Update and Delete API Gateway</h1>
-                    <img class="object-cover object-center rounded-md shadow w-auto h-70"
+                    <img class="object-cover object-center rounded-md shadow w-1/2 h-auto"
                         src= './cli_demo5.gif' ></img>
                     <h1 class='w-full text-xl font-bold leading-normal text-center  pb-10'>Figure 5: Create, Update and Delete Routes</h1>
                     

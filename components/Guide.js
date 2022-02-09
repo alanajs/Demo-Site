@@ -2,14 +2,16 @@ function Guide() {
     return (
     <div>  
         <main>
-            <section class="bg-white pl-10 pt-10 pb-16">
-                <div id="quickstart">
-                    <h1 class="font-extrabold text-3xl py-2">Quick Start</h1>
-                    <h2 class="font-bold text-xl py-1">Installation</h2>
-                    <p>alanajs is availabile on <a href='https://www.npmjs.com/package/alanajs' target='_blank' class='text-sky-500 font-bold'>npm</a>.</p>
-                    <code>npm install alanajs</code>                   
+            <section class="bg-white pl-10">
+                <div id="quickstart" class='py-5 pt-10'>
+                    <br />
+                        <h1 class="font-extrabold text-3xl py-2">Quick Start</h1>
+                        <h2 class="font-bold text-xl py-1">Installation</h2>
+                        <p>alanajs is availabile on <a href='https://www.npmjs.com/package/alanajs' target='_blank' class='text-sky-500 font-bold'>npm</a>.</p>
+                        <code>npm install alanajs</code>
                 </div>
-                <div id="cli">
+                <div id="cli" class='py-3'> 
+                    <br />
                     <h1 class="font-extrabold text-3xl py-2 pt-10">CLI</h1>
                     <p>Run <code>alanajs -h</code> or <code>alanajs --help</code> in your terminal to get this information from the command line.</p>
                     <p><code>alanajs command &lt;Input&gt; -flag [options]</code></p>
@@ -126,8 +128,9 @@ function Guide() {
                         <li><span class="bg-slate-100">-d, --description &lt;description&gt;</span> stage description</li>
                     </ul>                  
                 </div>
-                <div id="npm">
-                    <h1 class="font-extrabold text-3xl py-2 pt-10">npm</h1>
+                <div id="npm" class='py-3'>
+                    <br />
+                    <h1 class="font-extrabold text-3xl py-2 pt-10">NPM</h1>
                     <p>Create a .env file in the top level of your application with the following keys and values: <code>AWS_ACCESS_KEY_ID</code>,  
                         <code>AWS_SECRET_ACCESS_KEY</code>, <code>AWS_REGION</code><code>S3BUCKETNAME</code>, <code>ROLENAME</code>, and <code>FOLDER</code></p>
                     <img class="object-cover object-center pt-5 h-1/2 w-1/2 rounded-md" src="./npm_packagedemo_updated.png"/>

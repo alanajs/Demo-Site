@@ -9,7 +9,7 @@ const Footer = () => {
                     © 2022 Copyright: alanajs
                     <div>
                         Follow and star our Github page 
-                        <a class="github-button text-orange-500" href="https://github.com/oslabs-beta/Alana.js" aria-label="Follow @alana on GitHub"> here</a>
+                        <a class="github-button text-orange-500 underline" target='_blank' href="https://github.com/oslabs-beta/Alana.js" aria-label="Follow @alana on GitHub"> here</a>
                     </div>
                 </div>
             </footer>

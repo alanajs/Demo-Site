@@ -1,6 +1,3 @@
-import Image from 'next/image'
-import Github from '../public/GitHub-Mark-64px.png';
-
 const GithubIcon = (props) => {
     return (
         <svg height="45" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="45" data-view-component="true" class="octicon octicon-mark-github v-align-middle white">

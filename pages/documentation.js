@@ -6,9 +6,9 @@ function Documentation({children}) {
     return (
     <div class='flex'>
         <Head>
-            <title>Alana.JS/Documentation</title>
-            <meta name="description" content="Alana.JS" />
-            <link rel="icon" href="./alana.trans.png" />
+            <title>alanajs Documentation</title>
+            <meta name="alanajs Documentation" content="alanajs" />
+            <link rel="icon" href="./alana-Logo.png" />
         </Head>
         <Sidebar class='bg-gray'/>
         <Guide />

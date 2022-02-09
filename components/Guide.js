@@ -1,6 +1,3 @@
-// import Image from 'next/image';
-// import npm_demo from '../public/Npm_demo.png';
-
 function Guide() {    
     return (
     <div>  
@@ -9,7 +6,7 @@ function Guide() {
                 <div id="quickstart">
                     <h1 class="font-extrabold text-3xl py-2">Quick Start</h1>
                     <h2 class="font-bold text-xl py-1">Installation</h2>
-                    <p>Alanajs is availabile on <a href='https://www.npmjs.com/' class='text-sky-500 font-bold'>npm</a>.</p>
+                    <p>alanajs is availabile on <a href='https://www.npmjs.com/package/alanajs' target='_blank' class='text-sky-500 font-bold'>npm</a>.</p>
                     <code>npm install alanajs</code>                   
                 </div>
                 <div id="cli">
@@ -20,13 +17,14 @@ function Guide() {
                     <h2 class="font-bold text-xl pt-5 py-1">init</h2>
                     <p>Configures access to AWS </p>
                     <ul class="list-disc pl-5">
-                        <li>Input: <span class="bg-slate-100">AWS_ACCESS_KEY_ID</span> required, <span class="bg-slate-100">AWS_SECRET_ACCESS_KEY</span> required, <span class="bg-slate-100">region</span> optional,</li>
+                        <li>Input: <span class="bg-slate-100">AWS_ACCESS_KEY_ID</span> required, <span class="bg-slate-100">AWS_SECRET_ACCESS_KEY</span> required, <span class="bg-slate-100">AWS_ACCOUNT</span> optional account number, <span class="bg-slate-100">region</span> optional</li>
                         <li><span class="bg-slate-100">-r, --role &lt;roleName&gt;</span>: the AWS Role to be used</li>
                         <li><span class="bg-slate-100">-b, --bucket &lt;funcName&gt;</span>: S3 bucket to be used</li>
                         <li><span class="bg-slate-100">-u, --update</span>: set this flag to override and update AWS credentials</li>
+                        <li><span class="bg-slate-100">-d, --directory</span>: the directory that files to upload are located in; defaults to root directory</li>
                     </ul>
                     <h2 class="font-bold text-xl pt-5 py-1">list</h2>
-                    <p>Displays table of lambda functions </p>
+                    <p>Displays table of Lambda functions </p>
                     <ul class="list-disc pl-5">
                         <li><span class="bg-slate-100">-F, --functions</span>: list all the Lambda functions</li>
                         <li><span class="bg-slate-100">-f, --function &lt;funcName&gt;</span>: list a specific function versions</li>
@@ -34,7 +32,7 @@ function Guide() {
                     <h2 class="font-bold text-xl pt-5 py-1">create</h2>
                     <p> Creates Lambda functions. Verifies that the requirements exist before attempting to create a function, creating them if verification fails </p>
                     <ul class="list-disc pl-5">
-                        <li>Input: <span class="bg-slate-100">funcName</span> optional, <span class="bg-slate-100">fileArr...</span> optional, <span class="bg-slate-100">region</span> optional </li>
+                        <li>Input: <span class="bg-slate-100">&lt;funcName&gt;</span> optional, <span class="bg-slate-100">&lt;fileArr...&gt;</span> optional, <span class="bg-slate-100">region</span> optional </li>
                         <li><span class="bg-slate-100">-r, --role &lt;roleName&gt;</span>: the AWS Role to be used</li>
                         <li><span class="bg-slate-100">-b, --bucket &lt;funcName&gt;</span>: S3 bucket to be used</li>
                         <li><span class="bg-slate-100">-d, --description &lt;description text&gt;</span>: Lambda function description</li>
@@ -44,7 +42,7 @@ function Guide() {
                     <h2 class="font-bold text-xl pt-5 py-1">update</h2>
                     <p>Updates AWS Lambda function</p>
                     <ul class="list-disc pl-5">
-                        <li>Input: &lt;funcName&gt; and &lt;fileArr&gt; </li>
+                        <li>Input: <span class="bg-slate-100">&lt;funcName&gt;</span> and <span class="bg-slate-100">&lt;fileArr&gt;</span> </li>
                         <li><span class="bg-slate-100">-d, --description &lt;description text&gt;</span> Lambda function description</li>
                         <li><span class="bg-slate-100">-p, --publish </span> publish a new version of the Lambda function</li>
                     </ul>
@@ -81,29 +79,58 @@ function Guide() {
                     <h2 class="font-bold text-xl pt-5 py-1">createLayer</h2>
                     <p>Creates an AWS Lambda layer </p>
                     <ul class="list-disc pl-5">
-                        <li>Input: &lt;layerName&gt; required &lt;fileArr...&gt; required files to be converted into a Lambda layer separated by a space</li>
+                        <li>Input: <span class="bg-slate-100">&lt;layerName&gt;</span> required <span class="bg-slate-100">&lt;fileArr...&gt;</span> required files to be converted into a Lambda layer separated by a space</li>
                     </ul>
                     <h2 class="font-bold text-xl pt-5 py-1">addLayerToFunc</h2>
                     <p>Adds an AWS Lambda Layer to existing function </p>
                     <ul class="list-disc pl-5">
-                        <li>Input: &lt;funcName&gt; required </li>
+                        <li>Input: <span class="bg-slate-100">&lt;funcName&gt;</span> required </li>
                         <li><span class="bg-slate-100">-l, --layerName &lt;layerName&gt;</span> Lambda layer name</li>
                         <li><span class="bg-slate-100">-v, --layerVersion &lt;layerVersion&gt;</span> Lambda layer version number</li>
                     </ul>
                     <h2 class="font-bold text-xl pt-5 py-1">alias</h2>
                     <p>Creates AWS Lambda function alias </p>
                     <ul class="list-disc pl-5">
-                        <li>Input: <span class="bg-slate-100">&lt;funcName&gt;</span> required <span class="bg-slate-100">&lt;versiob&gt;</span> required version number for -c and -u flags</li>
+                        <li>Input: <span class="bg-slate-100">&lt;funcName&gt;</span> required <span class="bg-slate-100">&lt;version&gt;</span> required version number for -c and -u flags</li>
                         <li><span class="bg-slate-100">-c, --create &lt;aliasName&gt;</span> create alias name if it does not exist</li>
                         <li><span class="bg-slate-100">-u, --update &lt;aliasName&gt;</span> update alias name </li>
                         <li><span class="bg-slate-100">--delete</span> delete the specified alias name</li>
-                    </ul>                        
+                    </ul>   
+                    <h2 class="font-bold text-xl pt-5 py-1">api</h2>
+                    <p>Interacts with the APIs </p>
+                    <ul class="list-disc pl-5">
+                        <li>Input: <span class="bg-slate-100">&lt;apiName&gt;</span> optional name of the api to get information on. Leave blank for all apis</li>
+                        <li><span class="bg-slate-100">-c, --create</span> create api if it does not exist</li>
+                        <li><span class="bg-slate-100">-u, --update</span> update the api </li>
+                        <li><span class="bg-slate-100">-v, --version &lt;version&gt;</span> version of the api </li>
+                        <li><span class="bg-slate-100">-d, --description &lt;description&gt;</span> api description</li>
+                        <li><span class="bg-slate-100">--delete</span> delete the specified api</li>
+                    </ul>
+                    <h2 class="font-bold text-xl pt-5 py-1">routes</h2>
+                    <p>Interacts with a route on the api of choice </p>
+                    <ul class="list-disc pl-5">
+                        <li>Input: 
+                            <span class="bg-slate-100">&lt;apiName&gt;</span> required name of the api 
+                            <span class="bg-slate-100">&lt;method&gt;</span> optional type of HTTP request 
+                            <span class="bg-slate-100">&lt;route&gt;</span> optional route to establish (use "." for root) 
+                            <span class="bg-slate-100">&lt;funcName&gt;</span> optional the Lambda function that is invoked on the route </li>
+                        <li><span class="bg-slate-100">-c, --create</span> create specified route</li>
+                        <li><span class="bg-slate-100">-u, --update</span> update the route </li>
+                        <li><span class="bg-slate-100">-d, --description &lt;description&gt;</span> route description</li>
+                        <li><span class="bg-slate-100">--delete</span> delete the specified route</li>
+                    </ul>
+                    <h2 class="font-bold text-xl pt-5 py-1">deploy</h2>
+                    <p>Deploys the api to a staged name </p>
+                    <ul class="list-disc pl-5">
+                        <li>Input: <span class="bg-slate-100">&lt;apiName&gt;</span> required name of the api to get information on. Leave blank for all apis <span class="bg-slate-100">&lt;stageName&gt;</span> optional name of the stage being deployed </li>
+                        <li><span class="bg-slate-100">-d, --description &lt;description&gt;</span> stage description</li>
+                    </ul>                  
                 </div>
                 <div id="npm">
                     <h1 class="font-extrabold text-3xl py-2 pt-10">npm</h1>
                     <p>Create a .env file in the top level of your application with the following keys and values: <code>AWS_ACCESS_KEY_ID</code>,  
-                        <code>AWS_SECRET_ACCESS_KEY</code>, <code>AWS_REGION</code><code>S3BUCKETNAME</code>, and <code>ROLENAME</code></p>
-                    <img class="object-cover object-center pt-5 h-1/2 w-1/2 rounded-md shadow" src="./Npm_demo.png"/>
+                        <code>AWS_SECRET_ACCESS_KEY</code>, <code>AWS_REGION</code><code>S3BUCKETNAME</code>, <code>ROLENAME</code>, and <code>FOLDER</code></p>
+                    <img class="object-cover object-center pt-5 h-1/2 w-1/2 rounded-md" src="./npm_packagedemo_updated.png"/>
                     <h2 class="font-bold text-xl pt-5 py-1">getFuncList()</h2>
                     <ul>
                         <li>Displays table of lambda functions </li>
@@ -130,7 +157,6 @@ function Guide() {
                             <li><span class="bg-slate-100">description: </span> optional string for description </li>
                             <li><span class="bg-slate-100">layerArr: </span> optional array of objects with layerName and layerVersion properties for adding layers </li>
                             <li><span class="bg-slate-100">publish: </span> optional boolean set to false on default; set to true to publish the first version of the function during creation </li>
-                            <li>Output: </li>
                         </ul>
                     </ul>      
                     <h2 class="font-bold text-xl pt-5 py-1">updateFunction(params)</h2>
@@ -180,7 +206,6 @@ function Guide() {
                             <li><span class="bg-slate-100">funcName: </span>required string function name </li>
                             <li><span class="bg-slate-100">version: </span> required string which represents function version number to attach alias to</li>
                             <li><span class="bg-slate-100">aliasName: </span> optional string which represents name of alias; defaults to 'aliasName'</li>
-                            <li>Output: </li>
                         </ul>
                     </ul>
                     <h2 class="font-bold text-xl pt-5 py-1">updateAlias(params)</h2>
@@ -189,7 +214,6 @@ function Guide() {
                         <li><span class="bg-slate-100">params: </span> required object which includes the following: </li>
                         <ul class="list-disc pl-7"> 
                             <li><span class="bg-slate-100">funcName: </span>required string function name </li>
-                            <li>Output:  </li>
                         </ul>
                     </ul>
                     <h2 class="font-bold text-xl pt-5 py-1">deleteAlias(params, aliasName)</h2>

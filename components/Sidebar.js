@@ -3,8 +3,8 @@ import Link from 'next/link'
 
 const Sidebar = () => {
     return (
-        <div class="sticky">
-            <div class="sticky flex flex-row top-20 left-0 w-50 border-r">
+        <div class="sticky ">
+            <div class="sticky flex flex-row top-20 left-0 w-50">
                 <div class="overflow-y-auto">
                     <ul class="flex flex-col grow py-4 space-y-5">
                         <li class="px-5">

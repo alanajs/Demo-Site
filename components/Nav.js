@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Link from 'next/link'
 import GithubIcon from './GithubIcon.js';
+
 const Nav = () => {
     const [menuShow, setMenuShow] = useState(false);
     const showMenu = () => {
@@ -14,7 +15,7 @@ const Nav = () => {
                 <div class="flex items-top justify-between">
                     <div class="text-xl font-semibold text-gray-700 flex flex-row items-top">
                         <img class='w-14 h-14' src='./alana-Logo.png'/>
-                        <a id="title" class=" text-2xl font-bold text-gray-200 dark:text-white lg:text-3xl hover:text-gray-400 dark:hover:text-gray-300 pt-2 pl-2" href="/">alanajs</a>
+                        <Link href="/"><a id="title" class=" text-2xl font-bold text-gray-200 dark:text-white lg:text-3xl hover:text-gray-400 dark:hover:text-gray-300 pt-2 pl-2" >alanajs</a></Link>
                     </div>                
                     <div class="flex flex-col lg:hidden">
                         <div class=" sticky top-7 left-0 mx-4 mt-2 flex justify-end">

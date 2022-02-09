@@ -6,7 +6,7 @@ function Guide() {
                 <div id="quickstart">
                     <h1 class="font-extrabold text-3xl py-2">Quick Start</h1>
                     <h2 class="font-bold text-xl py-1">Installation</h2>
-                    <p>alanajs is availabile on <a href='https://www.npmjs.com/' class='text-sky-500 font-bold'>npm</a>.</p>
+                    <p>alanajs is availabile on <a href='https://www.npmjs.com/package/alanajs' target='_blank' class='text-sky-500 font-bold'>npm</a>.</p>
                     <code>npm install alanajs</code>                   
                 </div>
                 <div id="cli">
@@ -21,10 +21,10 @@ function Guide() {
                         <li><span class="bg-slate-100">-r, --role &lt;roleName&gt;</span>: the AWS Role to be used</li>
                         <li><span class="bg-slate-100">-b, --bucket &lt;funcName&gt;</span>: S3 bucket to be used</li>
                         <li><span class="bg-slate-100">-u, --update</span>: set this flag to override and update AWS credentials</li>
-                        <li><span class="bg-slate-100">-d, --directory</span>: the directory that files to upload are located in. defaults to root directory</li>
+                        <li><span class="bg-slate-100">-d, --directory</span>: the directory that files to upload are located in; defaults to root directory</li>
                     </ul>
                     <h2 class="font-bold text-xl pt-5 py-1">list</h2>
-                    <p>Displays table of lambda functions </p>
+                    <p>Displays table of Lambda functions </p>
                     <ul class="list-disc pl-5">
                         <li><span class="bg-slate-100">-F, --functions</span>: list all the Lambda functions</li>
                         <li><span class="bg-slate-100">-f, --function &lt;funcName&gt;</span>: list a specific function versions</li>
@@ -32,7 +32,7 @@ function Guide() {
                     <h2 class="font-bold text-xl pt-5 py-1">create</h2>
                     <p> Creates Lambda functions. Verifies that the requirements exist before attempting to create a function, creating them if verification fails </p>
                     <ul class="list-disc pl-5">
-                        <li>Input: <span class="bg-slate-100">&lt;funcName&gt;</span> optional, <span class="bg-slate-100">fileArr...&gt;</span> optional, <span class="bg-slate-100">region</span> optional </li>
+                        <li>Input: <span class="bg-slate-100">&lt;funcName&gt;</span> optional, <span class="bg-slate-100">&lt;fileArr...&gt;</span> optional, <span class="bg-slate-100">region</span> optional </li>
                         <li><span class="bg-slate-100">-r, --role &lt;roleName&gt;</span>: the AWS Role to be used</li>
                         <li><span class="bg-slate-100">-b, --bucket &lt;funcName&gt;</span>: S3 bucket to be used</li>
                         <li><span class="bg-slate-100">-d, --description &lt;description text&gt;</span>: Lambda function description</li>
@@ -91,7 +91,7 @@ function Guide() {
                     <h2 class="font-bold text-xl pt-5 py-1">alias</h2>
                     <p>Creates AWS Lambda function alias </p>
                     <ul class="list-disc pl-5">
-                        <li>Input: <span class="bg-slate-100">&lt;funcName&gt;</span> required <span class="bg-slate-100">&lt;versiob&gt;</span> required version number for -c and -u flags</li>
+                        <li>Input: <span class="bg-slate-100">&lt;funcName&gt;</span> required <span class="bg-slate-100">&lt;version&gt;</span> required version number for -c and -u flags</li>
                         <li><span class="bg-slate-100">-c, --create &lt;aliasName&gt;</span> create alias name if it does not exist</li>
                         <li><span class="bg-slate-100">-u, --update &lt;aliasName&gt;</span> update alias name </li>
                         <li><span class="bg-slate-100">--delete</span> delete the specified alias name</li>
@@ -122,15 +122,15 @@ function Guide() {
                     <h2 class="font-bold text-xl pt-5 py-1">deploy</h2>
                     <p>Deploys the api to a staged name </p>
                     <ul class="list-disc pl-5">
-                        <li>Input: <span class="bg-slate-100">&lt;apiName&gt;</span> required name of the api to get information on. Leave blank for all apis <span class="bg-slate-100">&lt;stageName&gt;</span> name of the stage being deployed </li>
+                        <li>Input: <span class="bg-slate-100">&lt;apiName&gt;</span> required name of the api to get information on. Leave blank for all apis <span class="bg-slate-100">&lt;stageName&gt;</span> optional name of the stage being deployed </li>
                         <li><span class="bg-slate-100">-d, --description &lt;description&gt;</span> stage description</li>
                     </ul>                  
                 </div>
                 <div id="npm">
                     <h1 class="font-extrabold text-3xl py-2 pt-10">npm</h1>
                     <p>Create a .env file in the top level of your application with the following keys and values: <code>AWS_ACCESS_KEY_ID</code>,  
-                        <code>AWS_SECRET_ACCESS_KEY</code>, <code>AWS_REGION</code><code>S3BUCKETNAME</code>, and <code>ROLENAME</code></p>
-                    <img class="object-cover object-center pt-5 h-1/2 w-1/2 rounded-md" src="./npmdemo2.png"/>
+                        <code>AWS_SECRET_ACCESS_KEY</code>, <code>AWS_REGION</code><code>S3BUCKETNAME</code>, <code>ROLENAME</code>, and <code>FOLDER</code></p>
+                    <img class="object-cover object-center pt-5 h-1/2 w-1/2 rounded-md" src="./npm_packagedemo_updated.png"/>
                     <h2 class="font-bold text-xl pt-5 py-1">getFuncList()</h2>
                     <ul>
                         <li>Displays table of lambda functions </li>

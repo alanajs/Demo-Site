@@ -35,7 +35,7 @@ function ContactPage() {
                         {/* <a href='https://www.linkedin.com/company/alanajs/'>Follow Us</a> */}
                     </div>
                     <div class='flex flex-col justify-center items-center'>
-                        <a href='https://github.com/oslabs-beta/Alana.js' target="_blank"><GithubIcon dark={true}/></a>
+                        <a href='https://github.com/oslabs-beta/alanajs' target="_blank"><GithubIcon dark={true}/></a>
                         {/* <p>GitHub</p> */}
                         {/* <a href='https://github.com/oslabs-beta/Alana.js'>Follow Us</a> */}
                     </div>

@@ -1,9 +1,11 @@
 import React from 'react';
 import Head from 'next/head'
 import Team from '../components/Team.js';
+import Link from 'next/link'
 import { gsap } from "gsap/dist/gsap";
 import { TextPlugin } from "gsap/dist/TextPlugin";
 const { useEffect, useRef } = React;
+
 const Home = () => {
     const hello = gsap.registerPlugin(TextPlugin); 
     const npmRef = useRef(); 
@@ -29,7 +31,7 @@ const Home = () => {
                         <div id='title' class="text-center">
                             <h1 id='title' class= "text-5xl text-black lg:text-6xl px-5">alanajs</h1>
                             <h2 class = "text-2xl  text-gray-700 lg:text-1xl leading-9 lg:leading-10 font-secular">AWS Lambda and API Gateway, simplified for JavaScript</h2>
-                            <a href="/documentation"><button class="w-full px-4 py-2 mt-4 text-sm font-medium text-white uppercase transition-colors duration-200 bg-blue-600 rounded-md lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500" >Get Started</button></a>
+                            <Link href="/documentation"><button class="w-full px-4 py-2 mt-4 text-sm font-medium text-white uppercase transition-colors duration-200 bg-blue-600 rounded-md lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500" >Get Started</button></Link>
                         </div>
                         </div>
                     </div>
@@ -62,7 +64,8 @@ const Home = () => {
                         </div>                        
                         <div class="md:w-1/2"> 
                             <h3 class="text-3xl font-semibold leading-10 lg:leading-10 text-gray-700">alanajs simplifies AWS SDK from development to production</h3>
-                            <p class="text-xl leading-10 tracking-normal lg:leading-9 mt-4 text-gray-600">alanajs is a free, open source npm package that makes it easy to create and deploy Lambda functions, incorporate microservices in your application, and add integrations with AWS API gateway. Designed specifically for the Node.js runtime environment, alanajs consolidates functionality provided by AWS SDK and IDE tookits, automating your deployment and configuration tasks so that you can focus on writing code. </p>
+                            <p class="text-xl leading-10 tracking-normal lg:leading-9 mt-4 text-gray-600">alanajs is a free, open source npm package that makes it easy to create and deploy Lambda functions, incorporate microservices in your application, and build on AWS API gateway.</p>
+                            <p class="text-xl leading-10 tracking-normal lg:leading-9 mt-4 pt-2 text-gray-600"> Designed specifically for the Node.js runtime environment, alanajs consolidates functionality provided by AWS SDK and IDE tookits, automating your deployment and configuration tasks so that you can focus on writing code. </p>
                         </div>                        
                     </div>
                 </div>

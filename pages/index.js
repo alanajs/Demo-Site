@@ -31,7 +31,7 @@ const Home = () => {
                         <div id='title' class="text-center">
                             <h1 id='title' class= "text-5xl text-black lg:text-6xl px-5">alanajs</h1>
                             <h2 class = "text-2xl  text-gray-700 lg:text-1xl leading-9 lg:leading-10 font-secular">AWS Lambda and API Gateway, simplified for JavaScript</h2>
-                            <Link href="/documentation"><a href="/documentation"><button class="w-full px-4 py-2 mt-4 text-sm font-medium text-white uppercase transition-colors duration-200 bg-blue-600 rounded-md lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500" >Get Started</button></a></Link>
+                            <Link href="/documentation"><button class="w-auto px-4 py-2 mt-4 text-sm font-medium text-white uppercase transition-colors duration-200 bg-blue-600 rounded-md lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500" >Get Started</button></Link>
                         </div>
                         </div>
                     </div>

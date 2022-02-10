@@ -4,7 +4,7 @@ import Footer from './Footer'
 export default function Layout({ children }) {
     return (
         <>
-            <Nav />
+            <Nav class="w-full"/>
             <main>{children}</main>
             <Footer />
         
